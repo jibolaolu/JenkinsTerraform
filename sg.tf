@@ -1,4 +1,4 @@
-resource "aws_security_group" "Jenkins-Sg" {
+resource "aws_security_group" "Node1-Sg" {
   name        = "Techbeat security Group"
   description = "allow access "
   vpc_id      = var.vpc #aws_vpc.techbeat.id
