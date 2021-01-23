@@ -1,7 +1,7 @@
 resource "aws_security_group" "Node1-Sg" {
-  name        = "Techbeat security Group"
+  name        = "Node-1 security Group"
   description = "allow access "
-  vpc_id      = var.vpc #aws_vpc.techbeat.id
+  vpc_id      = var.vpc
 
   ingress {
     from_port   = 22
