@@ -13,11 +13,11 @@ variable "service-name" {
 }
 
 variable "vpc" {
-  default = ""
+  default = "vpc-000b1c008600267ac"
 }
 
 variable "subnet_id" {
-  default = ""
+  default = "subnet-0605f8fcc5a995637"
 }
 
 variable "vpc_cidr" {
