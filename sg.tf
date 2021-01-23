@@ -1,7 +1,8 @@
 resource "aws_security_group" "Jenkins-Sg" {
   name        = "Techbeat security Group"
   description = "allow access "
-  vpc_id      = aws_vpc.techbeat.id
+  vpc_id      = var.vpc #aws_vpc.techbeat.id
+
   ingress {
     from_port   = 22
     protocol    = "tcp"

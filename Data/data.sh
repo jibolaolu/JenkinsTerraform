@@ -15,13 +15,3 @@ sudo yum install git -y
 
 
 #Install Jenkins
-sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
-sudo yum install jenkins --nogpgcheck -y
-sudo service jenkins start
-
-sudo echo  'jenkins ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/90-cloud-init-users
-
-#Install Terraform
-wget https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_amd64.zip
-unzip terraform_0.12.13_linux_amd64.zip -d /usr/bin/
