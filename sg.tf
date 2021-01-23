@@ -1,5 +1,5 @@
 resource "aws_security_group" "Node2-Sg" {
-  name        = "Node-1 security Group"
+  name        = "Node-2 security Group"
   description = "allow access "
   vpc_id      = var.vpc
 
